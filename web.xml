@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
   <servlet>
@@ -12,7 +11,7 @@
   </servlet-mapping>
   <context-param>
 		<param-name>contextConfigLocation</param-name>
-		<param-value>/WEB-INF/dispatcher-servlet.xml,/WEB-INF/ApplicationConfig.xml</param-value>
+		<param-value>/WEB-INF/dispatcher-servlet.xml,/WEB-INF/ApplicationContext.xml</param-value>
 		
 		
 </context-param>
@@ -21,4 +20,5 @@
 			org.springframework.web.context.ContextLoaderListener
 		</listener-class>
   </listener>
+  
 </web-app>

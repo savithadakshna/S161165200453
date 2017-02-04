@@ -15,8 +15,6 @@ public class UserDAOImpl implements UserDAO {
 	@Autowired
 	SessionFactory sessionFactory;
 	
-	
-	@Override
 	public void addUser(User user) {
 		
 		try
@@ -35,4 +33,17 @@ catch(Exception ex)
 		}
 	}
 
-}
+	@Override
+	public boolean validate(String uname, String pwd) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	//@Override
+	//public void validate(String uname, String pwd) {
+		
+		
+		
+	}
+
+
