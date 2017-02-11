@@ -5,5 +5,6 @@
 
 <a href="register">Register Here</a>
 <a href="login">Login Here</a>
+<a href="admin">Administrator</a>
 </body>
 </html>
