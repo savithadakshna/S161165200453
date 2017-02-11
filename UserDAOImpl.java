@@ -8,9 +8,7 @@ import org.springframework.stereotype.Repository;
 
 import com.niit.model.Category;
 import com.niit.model.Loginuser;
-
-
-
+import com.niit.model.Product;
 import com.niit.model.Supplier;
 import com.niit.model.User;
 
@@ -92,6 +90,29 @@ catch(Exception ex)
 			System.out.println("Error="+ex);
 		}
 	
+}
+
+@Autowired
+SessionFactory sessionFactory3;
+public void product(Product user) {
+	// TODO Auto-generated method stub
+	
+
+try
+		{
+			Session session=sessionFactory3.openSession();
+			Transaction trans=session.beginTransaction();
+			session.save(user);
+			trans.commit();
+			session.flush();
+			session.close();
+		}
+		
+catch(Exception ex)
+		{
+			System.out.println("Error="+ex);
+		}
+
 }
 
 	
