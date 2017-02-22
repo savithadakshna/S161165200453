@@ -9,21 +9,28 @@ import org.springframework.stereotype.Component;
 @Component
 @Entity
 public class Loginuser {
+	
 	@Id
-	private String UserName;
+	private String username;
+		
 	@Column
-	private String Password;
-	public String getUserName() {
-		return UserName;
+	 private String password;
+
+	public String getUsername() {
+		return username;
 	}
-	public void setUserName(String userName) {
-		UserName = userName;
+
+	public void setUsername(String username) {
+		this.username = username;
 	}
+
 	public String getPassword() {
-		return Password;
+		return password;
 	}
+
 	public void setPassword(String password) {
-		Password = password;
+		this.password = password;
 	}
+	
 
 }

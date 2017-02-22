@@ -7,6 +7,7 @@
 <title>ERROR PAGE</title>
 </head>
 <body>
-<h2> access denied to this user</h2>
+ACCESS DENIED TO THIS USER
+<h2>INVALID USER </h2>
 </body>
 </html>

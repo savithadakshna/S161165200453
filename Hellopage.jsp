@@ -7,6 +7,7 @@
 <title>WELCOME</title>
 </head>
 <body>
-<h2>login success</h2>
+WELCOME ${Loginuser.username}!!!!!!
+<h2>YOU HAVE LOGGED SUCCESSFULLY </h2>
 </body>
 </html>
