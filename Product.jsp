@@ -15,13 +15,14 @@
 <form:input type="text" path="product_name"/><br>
 <label><b>price</b></label>
 <form:input type="text" path="price" /><br>
-<br><label><b>quality</b></label>
-<form:input type="text" path="quality"/><br>
+<br><label><b>quantity</b></label>
+<form:input type="text" path="quantity"/><br>
 <label><b>category_id</b></label>
 <form:input type="text" path="category_id" /><br>
 <br><label><b>supplier_id</b></label>
 <form:input type="text" path="supplier_id"/><br>
-
+<input type="submit" value="ADD"><br>
+<a href="remove">Remove product</a>
 </form:form>
 </body>
 </html>

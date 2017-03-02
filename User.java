@@ -9,7 +9,6 @@ import org.springframework.stereotype.Component;
 @Component
 @Entity
 public class User {
-	
 	@Column
 	private String firstname;
 	
@@ -27,6 +26,8 @@ public class User {
 	
 	@Column
 	private String address;
+	@Column
+	private String role="ROLE_USER";
 
 	public String getFirstname() {
 		return firstname;
@@ -40,8 +41,8 @@ public class User {
 		return lastname;
 	}
 
-	public void setLastname(String lasttname) {
-		this.lastname = lasttname;
+	public void setLastname(String lastname) {
+		this.lastname = lastname;
 	}
 
 	public String getUsername() {
@@ -75,9 +76,14 @@ public class User {
 	public void setAddress(String address) {
 		this.address = address;
 	}
-	
-	
-	
-	
+
+	public String getRole() {
+		return role;
+	}
+
+	public void setRole(String role) {
+		this.role = role;
+	}
+
 
 }

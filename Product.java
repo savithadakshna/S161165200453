@@ -9,18 +9,19 @@ import org.springframework.stereotype.Component;
 @Component
 @Entity
 public class Product {
-	@Column
-	private String product_id;
 	@Id
+	private String product_id;
+	@Column
 	private String product_name;
 	@Column
 	private String price;
 	@Column
-	private String quality;
+	private String quantity;
 	@Column
-	private String category_id;
+private String category_id;
 	@Column
-	private String supplier_id;
+private String supplier_id;	
+	
 	public String getProduct_id() {
 		return product_id;
 	}
@@ -39,11 +40,11 @@ public class Product {
 	public void setPrice(String price) {
 		this.price = price;
 	}
-	public String getQuality() {
-		return quality;
+	public String getQuantity() {
+		return quantity;
 	}
-	public void setQuality(String quality) {
-		this.quality = quality;
+	public void setQuantity(String quantity) {
+		this.quantity = quantity;
 	}
 	public String getCategory_id() {
 		return category_id;
@@ -57,6 +58,7 @@ public class Product {
 	public void setSupplier_id(String supplier_id) {
 		this.supplier_id = supplier_id;
 	}
+	
 	
 	
 }

@@ -19,9 +19,8 @@
 <form:input type="text" path="supplier_phonenumber"/><br>
 <br><label><b>supplier_email_id</b></label>
 <form:input type="text" path="supplier_email_id"/><br>
-<input type="submit" value="submit"><br>
-<a href="add">add category here</a><br>
-<a href= "remove">remove category here</a>
+<input type="submit" value="ADD"><br>
+<a href= "remove">remove supplier here</a>
 </form:form>
 </body>
 </html>

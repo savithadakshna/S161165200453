@@ -9,5 +9,8 @@
 <body>
 WELCOME ${Loginuser.username}!!!!!!
 <h2>YOU HAVE LOGGED SUCCESSFULLY </h2>
+<a href="category">MANAGE CATEGORY</a>
+<a href="supplier">MANAGE SUPPLIER</a>
+<a href="product">MANAGE PRODUCT</a>
 </body>
 </html>

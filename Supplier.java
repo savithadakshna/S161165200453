@@ -8,9 +8,9 @@ import org.springframework.stereotype.Component;
 @Component
 @Entity
 public class Supplier {
-	@Column
-	private String supplier_id;
 	@Id
+	private String supplier_id;
+@Column
 	private String supplier_name;
 	@Column
 	private String supplier_address;

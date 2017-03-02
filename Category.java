@@ -1,6 +1,8 @@
 package com.niit.model;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 import org.springframework.stereotype.Component;
@@ -8,16 +10,19 @@ import org.springframework.stereotype.Component;
 @Component
 @Entity
 public class Category {
-	@Column
-	private String category_id;
 	@Id
+	@GeneratedValue(strategy=GenerationType.AUTO)
+	private int category_id;
+	@Column
 	private String category_name;
 	@Column
 	private String category_description;
-	public String getCategory_id() {
+	
+	
+	public int getCategory_id() {
 		return category_id;
 	}
-	public void setCategory_id(String category_id) {
+	public void setCategory_id(int category_id) {
 		this.category_id = category_id;
 	}
 	public String getCategory_name() {
