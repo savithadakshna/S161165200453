@@ -1,6 +1,8 @@
 package com.niit.model;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 import org.springframework.stereotype.Component;
@@ -9,7 +11,8 @@ import org.springframework.stereotype.Component;
 @Entity
 public class Supplier {
 	@Id
-	private String supplier_id;
+	@GeneratedValue(strategy=GenerationType.AUTO)
+	private int supplier_id;
 @Column
 	private String supplier_name;
 	@Column
@@ -18,10 +21,12 @@ public class Supplier {
 	private String supplier_phonenumber;
 	@Column
 	private String supplier_email_id;
-	public String getSupplier_id() {
+	
+	
+	public int getSupplier_id() {
 		return supplier_id;
 	}
-	public void setSupplier_id(String supplier_id) {
+	public void setSupplier_id(int supplier_id) {
 		this.supplier_id = supplier_id;
 	}
 	public String getSupplier_name() {

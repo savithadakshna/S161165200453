@@ -1,27 +1,34 @@
 package com.niit.controller;
 
-import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.servlet.ModelAndView;
 
-import com.niit.model.User;
 
-@Controller
-public class HomeController {
+	import org.springframework.stereotype.Controller;
+	import org.springframework.web.bind.annotation.RequestMapping;
 
-	/*@RequestMapping(value="/register", method=RequestMethod.GET)
-	public ModelAndView register(User user,Model m)
-	{
-		ModelAndView mv=new ModelAndView();
-		return mv;
-	}*/
-	@RequestMapping(value="/login")
-	public String login()
-	{
-		return "loginpage";
+	@Controller
+	public class HomeController {
+		@RequestMapping("/Home")
+		public String getHome()
+		{
+			return "Home";
+		}
+		
+		@RequestMapping("/aboutus")
+		public String getAbout()
+		{
+			return "aboutus";
+		}
+		@RequestMapping("/contact")
+		public String getContact()
+		{
+			return "contact";
+		}
+
+		@RequestMapping("/index")
+		public String gethome()
+		{
+			return "Home";
+		}
 	}
-}
 
 

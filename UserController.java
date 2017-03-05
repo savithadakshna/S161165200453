@@ -42,13 +42,13 @@ public class UserController {
 		
 	}
 	
-		   @RequestMapping(value = "/login", method = RequestMethod.GET)
+		   @RequestMapping(value ="/login", method = RequestMethod.GET)
 	   public String init(Model model) {
 	    	 model.addAttribute("Loginuser", new User()); 
 	      return "LoginPage";
 		 }
 	 
-	    @RequestMapping(method = RequestMethod.POST)
+	    @RequestMapping( method = RequestMethod.POST)
 	    public String submit(Model model, @ModelAttribute("Loginuser") User loginuser) {
 	    	if (loginDAO.checkLogin(loginuser.getUsername(), loginuser.getPassword()))
 	    	{

@@ -1,17 +1,104 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
     <%@ taglib uri="http://www.springframework.org/tags/form" prefix="form" %>
- 
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
+<title> LOGIN</title>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>LOGIN PAGE</title>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ 
+ <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+
+form {
+    border: 3px solid #f1f1f1;
+}
+
+input[type=text], input[type=password] 
+{
+
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 10%;
+}
+
+
+.imgcontainer {
+
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+
+.container {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    
+}
+
+</style>
 </head>
 <body>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+<a href="logo" class="pull-left"><img src="resources/images/logo.png/" height="80" width="80"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="hhome">Home</a></li>
+        <li><a href="aboutus">About</a></li>
+       
+        <li><a href="contact">Contact</a></li>
+      </ul>
+      
+    </div>
+  </div>
+</nav>
 <form:form action="login" method="POST" commandName="Loginuser">
-      <table>
 
-         <tr>
+
+ <div class="container">
+      <table>
+<tr>
             <td>UserName:</td>
             <td><form:input type="text" path="username"/></td>
          </tr>
@@ -21,8 +108,17 @@
          </tr>
          <tr>
             <td><input name="submit" type="submit" value="login" /></td>
-         </tr>
-      </table>
+             <td><input type="checkbox" checked="checked"/> Remember me</td>
+             
+              </tr>
+     </table>
+             
+              <div class="container" style="background-color:#f1f1f1">
+   <a href="register">create an account to login</a>
+    <span class="psw">Forgot <a href="#">password?</a></span>
+  </div>
+ 
+      </div>
       </form:form>
 </body>
 </html>

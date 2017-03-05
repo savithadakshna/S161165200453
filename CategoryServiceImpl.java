@@ -12,4 +12,16 @@ private UserDAO userDAO;
 	{
 userDAO.saveCategory(user);
 }
+	@Override
+	public void deleteCategory(int id) {
+		// TODO Auto-generated method stub
+		userDAO.deleteCategory(id);
+		
+	}
+	@Override
+	public void editCategory(Category user) {
+		// TODO Auto-generated method stub
+		userDAO.editCategory(user);
+		
+	}
 }

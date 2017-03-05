@@ -13,7 +13,7 @@
 <script src="bootstrap/js/bootstrap.min.js"></script>
 <style>
  body {
-    background-image: url("ddd.jpg");
+    background-image: url("http://crunchify.com/bg.png");
     
 }
 </style>

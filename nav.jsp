@@ -29,19 +29,17 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-<a href="logo.jsp" class="pull-left"><img src="logo.png" height="80" width="80"></a>
+<a href="logo" class="pull-left"><img src="resources/images/logo.png" height="80" width="80"></a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="hhome.jsp">Home</a></li>
-        <li><a href="aboutus.jsp">About</a></li>
-        <li><a href="#"> new collections</a></li>
-        <li><a href="contact.jsp">Contact</a></li>
+        <li class="active"><a href="Home">Home</a></li>
+        <li><a href="aboutus">About</a></li>
+        <li><a href="contact">Contact</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="loginpage.jsp"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        <li><a href="login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
       </ul>
     </div>
   </div>
 </nav>
-</body>

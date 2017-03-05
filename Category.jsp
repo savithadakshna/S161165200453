@@ -10,7 +10,6 @@
 </head>
 <body>
 <form:form action="addcategory" method="post" commandName="user">
-
 <form:hidden path="category_id" /><br>
 <br><label><b>category_name</b></label>
 <form:input type="text" path="category_name"/><br>
@@ -18,7 +17,7 @@
 <form:input type="text" path="category_description" /><br>
 <input type="submit" value="ADD"><br>
 
-<a href= "remove">remove category here</a>
+
 </form:form>
 </body>
 

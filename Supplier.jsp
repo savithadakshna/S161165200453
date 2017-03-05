@@ -8,9 +8,8 @@
 <title>SUPPLIER PAGE</title>
 </head>
 <body>
-<form:form action="supplier" method="post" commandName="user" >
-<label><b>supplier_id</b></label>
-<form:input type="text" path="supplier_id"/><br>
+<form:form action="addsupplier" method="post" commandName="user" >
+<form:hidden path="supplier_id" /><br>
 <br><label><b>supplier_name</b></label>
 <form:input type="text" path="supplier_name"/><br>
 <br><label><b>supplier_address</b></label>
@@ -20,7 +19,7 @@
 <br><label><b>supplier_email_id</b></label>
 <form:input type="text" path="supplier_email_id"/><br>
 <input type="submit" value="ADD"><br>
-<a href= "remove">remove supplier here</a>
+
 </form:form>
 </body>
 </html>

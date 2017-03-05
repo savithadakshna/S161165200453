@@ -1,16 +1,13 @@
 package com.niit.controller;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-
-
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
 
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
 
-import org.springframework.web.servlet.ModelAndView;
+import com.niit.dao.SupplierService;
 
-import com.niit.dao.UserDAO;
 import com.niit.model.Supplier;
 
 
@@ -18,23 +15,21 @@ import com.niit.model.Supplier;
 @Controller
 public class ManageSupplier {
 	
-	
-		@Autowired
-		UserDAO userdao;
-		@RequestMapping(value="supplier", method=RequestMethod.GET)
-		public ModelAndView sendregister(@ModelAttribute("user")Supplier user)
+@Autowired
+		private SupplierService supplierService;
+		@RequestMapping("/supplier")
+		public String getsupplier(Model model)
 		{
-			ModelAndView mv=new ModelAndView("Supplier");
-			return mv;
+			model.addAttribute("user", new Supplier()); 
+			return "Supplier";
 		}
-		@RequestMapping(value="supplier", method=RequestMethod.POST)
-		public ModelAndView getUser( Supplier user)
+		
+		
+		@RequestMapping("/addsupplier")
+		public String saveSupplier(@ModelAttribute(value="user") Supplier user)
 		{
-			
-			userdao.supplier(user);
-			ModelAndView mv=new ModelAndView("AdminPage","user",new Supplier());
-			return mv;		
-			
+			supplierService.saveSupplier(user);
+			return "Supplierlist";
 		}
 
 }
