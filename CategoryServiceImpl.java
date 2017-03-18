@@ -1,5 +1,7 @@
 package com.niit.dao;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -12,16 +14,21 @@ private UserDAO userDAO;
 	{
 userDAO.saveCategory(user);
 }
-	@Override
-	public void deleteCategory(int id) {
+	public List<Category>getAllCategory()
+	{
+	return userDAO.getAllCategory();
+	
+	}
+	public void deleteCategory(int category_id) {
 		// TODO Auto-generated method stub
-		userDAO.deleteCategory(id);
+		userDAO.deleteCategory(category_id);
 		
 	}
-	@Override
-	public void editCategory(Category user) {
+	public void editform(Category user) {
 		// TODO Auto-generated method stub
-		userDAO.editCategory(user);
+		userDAO.editform(user);
 		
 	}
+	
+	
 }

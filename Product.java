@@ -2,6 +2,8 @@ package com.niit.model;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 import org.springframework.stereotype.Component;
@@ -10,7 +12,8 @@ import org.springframework.stereotype.Component;
 @Entity
 public class Product {
 	@Id
-	private String product_id;
+	@GeneratedValue(strategy=GenerationType.AUTO)
+	private int product_id;
 	@Column
 	private String product_name;
 	@Column
@@ -22,10 +25,11 @@ private String category_id;
 	@Column
 private String supplier_id;	
 	
-	public String getProduct_id() {
+	
+	public int getProduct_id() {
 		return product_id;
 	}
-	public void setProduct_id(String product_id) {
+	public void setProduct_id(int product_id) {
 		this.product_id = product_id;
 	}
 	public String getProduct_name() {

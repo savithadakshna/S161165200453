@@ -66,6 +66,7 @@ padding-tp:40px;
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li><a href="login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        <li><a href="logout">Log out</a></li>
       </ul>
       
     </div>

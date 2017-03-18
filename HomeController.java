@@ -23,7 +23,11 @@ package com.niit.controller;
 		{
 			return "contact";
 		}
-
+		@RequestMapping("/logout")
+		public String getLogout()
+		{
+			return "LogoutPage";
+		}
 		@RequestMapping("/index")
 		public String gethome()
 		{

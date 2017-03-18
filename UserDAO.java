@@ -15,10 +15,18 @@ public interface UserDAO {
 	
 	public void admin(User user);
 	public void saveCategory(Category user);
-	List<Category> getAllCategories();
-	public void deleteCategory(int  id);
-	public void editCategory(Category user);
+	public List<Category> getAllCategory();
+	public List<Supplier> getAllSupplier();
+	public List<Product> getAllProduct();
 	public void saveSupplier(Supplier user);
-	public void product(Product user);
+	public void saveProduct(Product user);
+    public void deleteCategory(int  category_id);
+	public void editform(Category user);
+	public void deletesupplier(int supplier_id);
+	public void editformsupplier(Supplier supplier);
+
+
+
+	
 	
 }

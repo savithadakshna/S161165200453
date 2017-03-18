@@ -66,6 +66,7 @@ padding-tp:40px;
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li><a href="login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        <li><a href="logout">Log out</a></li>
       </ul>
       
     </div>
@@ -173,14 +174,14 @@ padding-tp:40px;
      <div class="col-sm-3">
    <img src="resources/images/c.jpg" class="img-responsive" style="width:100%" alt="Image">
        <div class="btn-grp">
-<a href="#" class="btn btn-lg btn-info">Buy Now</a>
+<a href="login" class="btn btn-lg btn-info">Buy Now</a>
 </div>
       </div>
       <div class="col-sm-3">
       
        <img src="resources/images/f.jpg" class="img-responsive" style="width:100%" alt="Image">
         <div class="btn-grp">
-<a href="#" class="btn btn-lg btn-info">Buy Now</a>
+<a href="login" class="btn btn-lg btn-info">Buy Now</a>
 </div>
     
     </div>
@@ -188,98 +189,98 @@ padding-tp:40px;
       
        <img src="resources/images/hh.png" class="img-responsive" style="width:100%" alt="Image">
         <div class="btn-grp">
-<a href="#" class="btn btn-lg btn-info">Buy Now</a>
+<a href="login" class="btn btn-lg btn-info">Buy Now</a>
 </div>
     </div>
      <div class="col-sm-3">
       
        <img src="resources/images/kkk.jpg" class="img-responsive" style="width:100%" alt="Image">
        <div class="btn-grp">
-<a href="#" class="btn btn-lg btn-info">Buy Now</a>
+<a href="login" class="btn btn-lg btn-info">Buy Now</a>
 </div>
   </div>
    <div class="col-sm-3">
       
        <img src="resources/images/flo.jpg" class="img-responsive" style="width:100%" alt="Image">
         <div class="btn-grp">
-<a href="#" class="btn btn-lg btn-info">Buy Now</a>
+<a href="login" class="btn btn-lg btn-info">Buy Now</a>
 </div>
        </div>
         <div class="col-sm-3">
       
        <img src="resources/images/mn.jpg" class="img-responsive" style="width:100%" alt="Image">
         <div class="btn-grp">
-<a href="#" class="btn btn-lg btn-info">Buy Now</a>
+<a href="login" class="btn btn-lg btn-info">Buy Now</a>
 </div>
        </div>
              <div class="row"> 
                <div class="col-sm-3">
      <img src="resources/images/dress.png" class="img-responsive" style="width:100%" alt="Image">
         <div class="btn-grp">
-<a href="#" class="btn btn-lg btn-info">Buy Now</a>
+<a href="login" class="btn btn-lg btn-info">Buy Now</a>
 </div>
        </div>
        <div class="row">
        <div class="col-sm-3">
       <img src="resources/images/gud.jpg" class="img-responsive" style="width:100%" alt="Image">
         <div class="btn-grp">
-<a href="#" class="btn btn-lg btn-info">Buy Now</a>
+<a href="login" class="btn btn-lg btn-info">Buy Now</a>
 </div>
        </div>
         <div class="col-sm-3">
       
        <img src="resources/images/qqq.jpg" class="img-responsive" style="width:100%" alt="Image">
         <div class="btn-grp">
-<a href="#" class="btn btn-lg btn-info">Buy Now</a>
+<a href="login" class="btn btn-lg btn-info">Buy Now</a>
 </div>
        </div>
       <div class="col-sm-3">
       
        <img src="resources/images/kit.jpg" class="img-responsive" style="width:100%" alt="Image">
         <div class="btn-grp">
-<a href="#" class="btn btn-lg btn-info">Buy Now</a>
+<a href="login" class="btn btn-lg btn-info">Buy Now</a>
 </div>
        </div>  
        <div class="col-sm-3">
       
        <img src="resources/images/cc.jpg"class="img-responsive" style="width:100%" alt="Image">
         <div class="btn-grp">
-<a href="#" class="btn btn-lg btn-info">Buy Now</a>
+<a href="login" class="btn btn-lg btn-info">Buy Now</a>
 </div>
        </div> 
    <div class="col-sm-3">
       
        <img src="resources/images/p.jpg" class="img-responsive" style="width:100%" alt="Image">
         <div class="btn-grp">
-<a href="#" class="btn btn-lg btn-info">Buy Now</a>
+<a href="login" class="btn btn-lg btn-info">Buy Now</a>
 </div>
        </div>   
        <div class="col-sm-3">
       
        <img src="resources/images/ff.jpg" class="img-responsive" style="width:100%" alt="Image">
         <div class="btn-grp">
-<a href="#" class="btn btn-lg btn-info">Buy Now</a>
+<a href="login" class="btn btn-lg btn-info">Buy Now</a>
 </div>
        </div> 
        <div class="col-sm-3">
       
        <img src="resources/images/gr.jpg" class="img-responsive" style="width:100%" alt="Image">
         <div class="btn-grp">
-<a href="#" class="btn btn-lg btn-info">Buy Now</a>
+<a href="login" class="btn btn-lg btn-info">Buy Now</a>
 </div>
        </div>
         <div class="col-sm-3">
       
        <img src="resources/images/cu.jpg"  class="img-responsive" style="width:100%" alt="Image">
         <div class="btn-grp">
-<a href="#" class="btn btn-lg btn-info">Buy Now</a>
+<a href="login" class="btn btn-lg btn-info">Buy Now</a>
 </div>
        </div>
         <div class="col-sm-3">
       
        <img src="resources/images/hi.jpg" class="img-responsive" style="width:100%" alt="Image">
         <div class="btn-grp">
-<a href="#" class="btn btn-lg btn-info">Buy Now</a>
+<a href="login" class="btn btn-lg btn-info">Buy Now</a>
 </div>
        </div> 
                          

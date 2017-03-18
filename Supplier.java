@@ -13,14 +13,14 @@ public class Supplier {
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO)
 	private int supplier_id;
-@Column
+    @Column
 	private String supplier_name;
+    @Column
+    private String email_id;
 	@Column
 	private String supplier_address;
 	@Column
 	private String supplier_phonenumber;
-	@Column
-	private String supplier_email_id;
 	
 	
 	public int getSupplier_id() {
@@ -35,6 +35,13 @@ public class Supplier {
 	public void setSupplier_name(String supplier_name) {
 		this.supplier_name = supplier_name;
 	}
+	
+	public String getEmail_id() {
+		return email_id;
+	}
+	public void setEmail_id(String email_id) {
+		this.email_id = email_id;
+	}
 	public String getSupplier_address() {
 		return supplier_address;
 	}
@@ -47,12 +54,9 @@ public class Supplier {
 	public void setSupplier_phonenumber(String supplier_phonenumber) {
 		this.supplier_phonenumber = supplier_phonenumber;
 	}
-	public String getSupplier_email_id() {
-		return supplier_email_id;
-	}
-	public void setSupplier_email_id(String supplier_email_id) {
-		this.supplier_email_id = supplier_email_id;
-	}
+	
+	
+	
 	
 
 }

@@ -91,17 +91,8 @@ catch(Exception ex)
 		}
 	
 }
-public List<Category> getAllCategories() {
-	Session session=sessionFactory.openSession();
-	Query query=session.createQuery("from Category");
-	List<Category> categories=query.list();
-	session.close();
-	return categories;
-}
 
-
-
-public void product(Product user) {
+public void saveProduct(Product user) {
 	// TODO Auto-generated method stub
 	
 
@@ -121,6 +112,32 @@ catch(Exception ex)
 		}
 
 }
+public List<Category> getAllCategory() {
+	Session session=sessionFactory.openSession();
+	Query query=session.createQuery("from Category");
+	List<Category> cat=query.list();
+	session.close();
+	return cat;
+}
+
+public List<Supplier> getAllSupplier() {
+	Session session=sessionFactory.openSession();
+	Query query=session.createQuery("from Supplier");
+	List<Supplier> sup=query.list();
+	session.close();
+	return sup;
+}
+public List<Product> getAllProduct() {
+	Session session=sessionFactory.openSession();
+	Query query=session.createQuery("from Product");
+	List<Product> pro=query.list();
+	session.close();
+	return pro;
+	
+}
+
+
+
 
 
 public void admin(User user) {
@@ -146,31 +163,22 @@ public void admin(User user) {
 }
 
 
-@Override
-public void deleteCategory(int id) {
-	try
-	{
-		
-			Session session=sessionFactory.openSession();
+public void deleteCategory(int category_id) {
+	
+Session session=sessionFactory.openSession();
 			
 			//Make the object persistent[read the data from the table and add it to session]
-			Category user=(Category)session.get(Category.class, id);
-			session.delete(user);
+			Category category=new Category();
+			category.setCategory_id(category_id);
+			session.delete(category);
 			session.flush();
 			session.close();
 			
-		}
-
-	catch(Exception ex)
-	{
-		System.out.println("Error="+ex);
+		
 	}
-	
-	
-}
 
-@Override
-public void editCategory(Category user) {
+
+public void editform(Category user) {
 	 
 		Session session=sessionFactory.openSession();
 		System.out.println("Id of the category in dao is " + user.getCategory_id());
@@ -179,8 +187,30 @@ public void editCategory(Category user) {
 		session.close();
 }
 
+
+
+public void deletesupplier(int supplier_id) {
+	// TODO Auto-generated method stub
+	Session session=sessionFactory.openSession();
+	
+	//Make the object persistent[read the data from the table and add it to session]
+	Supplier supplier=(Supplier)session.get(Supplier.class, supplier_id);
+	session.delete(supplier);
+	session.flush();
+	session.close();
+	
 }
 
+public void editformsupplier(Supplier supplier) {
+	// TODO Auto-generated method stub
+	Session session=sessionFactory.openSession();
+	System.out.println("Id of the category in dao is " + supplier.getSupplier_id());
+	session.update(supplier); //update product set  where id=?
+	session.flush();
+	session.close();
+	
+}
+}
 
 
 

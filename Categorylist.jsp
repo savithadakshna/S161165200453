@@ -1,6 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
-  
+  <%@ taglib uri="http://www.springframework.org/tags/form" prefix="form" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ page isELIgnored="false" %>
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -13,9 +16,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
-<body>
-<body>
-	
+
 	<div class="container">
 		<table class="table table-striped">
 			<thead>
@@ -23,24 +24,25 @@
 				<th>Category Id</th>
 				<th>Category Name</th>
 					<th> Category Description</th>
-                   <th>Edit</th>
-                    <th>Delete</th>
+                   <th>Delete/Edit</th>
+                    
 				</tr>
 			</thead>
-			<c:forEach var="p" items="${Categorylist}">
-			<td>${p.id }</td>
-					<td>${p.name }</td>
-					<td>${p.description }</td>
+			<c:url value="/getAllCategory">browse category </c:url>
+			<c:forEach var="p" items="${categorylist}">
+			<tr><td>${p.category_id }</td>
+					<td>${p.category_name }</td>
+					<td>${p.category_description }</td>
 					
 			<td>
 					
-					<c:url var="delete" value="/deletecategory/${p.id }"></c:url>
+					<c:url var="delete" value="/deleteCategory/${p.category_id }"></c:url>
 					<a href="${delete }"><span class="glyphicon glyphicon-remove"></span></a>
 					
-					<c:url var="edit" value="/editform/${p.id }"></c:url>
+					<c:url var="edit" value="/editform/${p.category_id }"></c:url>
 					<a href="${edit }"><span class="glyphicon glyphicon-pencil"></span></a>
 				    </td>
-				
+				</tr>
 			</c:forEach>
 		</table>
 

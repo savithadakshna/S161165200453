@@ -51,6 +51,12 @@ button {
     margin: 24px 0 12px 0;
 }
 
+
+img.cool{
+    width: 40%;
+    border-radius: 50%;
+}
+
 .container {
     padding: 16px;
 }
@@ -84,27 +90,33 @@ span.psw {
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="hhome">Home</a></li>
+        <li class="active"><a href="Home">Home</a></li>
         <li><a href="aboutus">About</a></li>
        
         <li><a href="contact">Contact</a></li>
+         <li><a href="register">Sign up</a></li>
       </ul>
-      
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
     </div>
   </div>
 </nav>
 <form:form action="login" method="POST" commandName="Loginuser">
+ <div class="imgcontainer" align="center">
+    <img src="resources/images/img_cool2.png" alt="Cool" class="cool">
+  </div>
 
 
- <div class="container">
+ <div class="container" align="center">
       <table>
 <tr>
-            <td>UserName:</td>
-            <td><form:input type="text" path="username"/></td>
+            <td><b>UserName:</b></td>
+            <td><form:input type="text" path="username" required="required"  pattern="[A-Za-z]{1,15}"/></td>
          </tr>
          <tr>
-            <td>Password:</td>
-            <td><form:input type="password" path="password" /></td>
+            <td><b>Password:</b></td>
+            <td><form:input type="password" path="password" maxsize="15" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"/></td>
          </tr>
          <tr>
             <td><input name="submit" type="submit" value="login" /></td>
@@ -113,9 +125,9 @@ span.psw {
               </tr>
      </table>
              
-              <div class="container" style="background-color:#f1f1f1">
+              <div class="container" align="left" style="background-color:#f1f1f1">
    <a href="register">create an account to login</a>
-    <span class="psw">Forgot <a href="#">password?</a></span>
+    
   </div>
  
       </div>

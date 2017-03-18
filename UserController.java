@@ -48,7 +48,7 @@ public class UserController {
 	      return "LoginPage";
 		 }
 	 
-	    @RequestMapping( method = RequestMethod.POST)
+	    @RequestMapping(value="/login", method = RequestMethod.POST)
 	    public String submit(Model model, @ModelAttribute("Loginuser") User loginuser) {
 	    	if (loginDAO.checkLogin(loginuser.getUsername(), loginuser.getPassword()))
 	    	{

@@ -36,6 +36,7 @@
         <li class="active"><a href="Home">Home</a></li>
         <li><a href="aboutus">About</a></li>
         <li><a href="contact">Contact</a></li>
+         <li><a href="register">Sign up</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li><a href="login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>

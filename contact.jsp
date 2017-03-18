@@ -25,15 +25,15 @@
 <h2>CONTACT US</h2>
 <p style="font-size:20;"> 
 <font color="black"><b>
-<p style="font-size:20;"> Shoppingzone is operated by Shoppingzone Seller Services Private Ltd, an affiliate of Shoppingzone.com, Shoppingzone.com, Inc. is a Fortune 500 company based in Seattle, that opened on the World Wide Web in July 1995; and today offers Earth’s Biggest Selection. Shoppingzone and its affiliates operate websites, including www.shoppingzone.com, www.shoppingzone.co.uk etc.</p>
+<p style="font-size:20;"> Dressshopping is operated by dressshopping Seller Services Private Ltd, an affiliate of dressshopping.com, dressshopping.com, Inc. is a Fortune 500 company based in Seattle, that opened on the World Wide Web in July 1995; and today offers Earth Biggest Selection. Dressshopping and its affiliates operate websites, including www.dressshopping.com, www.dressshopping.co.uk etc.</p>
 
-<p style="font-size:20;"> They are committed to ensure 100% Purchase Protection for your shopping done on Shoppingzone.in so that you can benefit from a safe and secure online ordering experience, convenient electronic payments and cash on delivery, easy returns, Shoppingzone’s customer service with 24x7 support, and a globally recognised and comprehensive purchase protection provided by Shoppingzone’s A-to-Z Guarantee.</p> 
+<p style="font-size:20;"> They are committed to ensure 100% Purchase Protection for your shopping done on dressshopping.in so that you can benefit from a safe and secure online ordering experience, convenient electronic payments and cash on delivery, easy returns,dressshopping customer service with 24x7 support, and a globally recognised and comprehensive purchase protection provided by dressshopping A-to-Z Guarantee.</p> 
 
-<p style="font-size:20;"> Shoppingzone Development Center India Pvt Ltd.<br>
+<p style="font-size:20;"> dressshopping Development Center India Pvt Ltd.<br>
 2nd Floor, Safina Towers,<br>
 Opposite to J.P. Techno park,<br>
 No.3, Ali Asker Road<br>
-Bangalore – 560 052.<br></p>
+Bangalore-�� 560 052.<br></p>
 
 <p style="font-size:20;">You can reach out to them at
 

@@ -1,25 +1,50 @@
 package com.niit.controller;
 
+
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.servlet.ModelAndView;
 
-import com.niit.dao.UserDAO;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+
+
+import com.niit.dao.ProductService;
 import com.niit.model.Product;
-;
+
+
+
 
 @Controller
-public class ManageProduct {
+public class ManageProduct{
 	@Autowired
-	UserDAO userdao;
-	@RequestMapping(value="product", method=RequestMethod.GET)
-	public ModelAndView sendregister(@ModelAttribute("user")Product user)
+	private ProductService productService;
+	@RequestMapping("/product")
+	public String getproduct(Model model)
 	{
-		ModelAndView mv=new ModelAndView("Product");
-		return mv;
+		model.addAttribute("user", new Product()); 
+		return "Product";
 	}
+	
+	
+	@RequestMapping("/addproduct")
+	public String saveProduct(@ModelAttribute(value="user") Product user,Model model)
+	{
+	productService.saveProduct(user);
+	return "redirect:/getAllProduct";
+	}
+	
+                 @RequestMapping("/getAllProduct")
+	public String getProduct(Model model){
+                List<Product> pro=productService.getAllProduct();
+               model.addAttribute("productList",pro);
+                 return"ProductList";
+                 }
+	
+               
+	
 
 }
