@@ -12,7 +12,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 
 import org.springframework.stereotype.Repository;
-
+import org.springframework.transaction.annotation.Transactional;
 
 import com.niit.model.Category;
 import com.niit.model.Product;
@@ -162,7 +162,7 @@ public void admin(User user) {
 			}
 }
 
-
+@Transactional
 public void deleteCategory(int category_id) {
 	
 Session session=sessionFactory.openSession();
